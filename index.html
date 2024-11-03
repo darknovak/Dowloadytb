@@ -35,4 +35,236 @@
     <script src="youtube-api.php"></script>
 </body>
 </html>
-  https://www.googleapis.com/youtube/v3/videos
+  <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads e Reels do YouTube</title>
+    <!-- Estilo interno com CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #005f73;
+        }
+        .gif-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .gif-container img {
+            width: 200px;
+            height: auto;
+        }
+        .icon-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .icon-container img {
+            width: 50px;
+            height: 50px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Baixe Vídeos e Reels do YouTube</h1>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <!-- Seção 1: Introdução -->
+        <div class="section">
+            <h2>O que é o Download de Vídeos do YouTube?</h2>
+            <p>
+                O download de vídeos do YouTube é uma prática comum para usuários que desejam salvar conteúdo
+                para visualização offline. Com a crescente popularidade de vídeos e reels, muitas pessoas estão
+                buscando maneiras rápidas e seguras de baixar seu conteúdo favorito. Aqui explicamos como você pode 
+                baixar vídeos e reels diretamente do YouTube.
+            </p>
+            <a href="#" class="download-btn">Saiba mais sobre Downloads</a>
+        </div>
+
+        <!-- Seção 2: Como baixar reels -->
+        <div class="section">
+            <h2>Como Baixar Reels do YouTube</h2>
+            <p>
+                Reels são pequenos vídeos populares no YouTube, e muitas vezes você deseja baixá-los para uso futuro.
+                Para baixar reels, você pode usar ferramentas online ou até scripts específicos que permitem 
+                capturar o conteúdo com facilidade. É importante respeitar os direitos autorais ao baixar vídeos.
+            </p>
+            <a href="#" class="download-btn" id="reels-btn">Clique para mais detalhes</a>
+        </div>
+
+        <!-- Seção 3: GIF Interativo -->
+        <div class="gif-container">
+            <h2>Veja como é simples!</h2>
+            <img src="https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif" alt="Exemplo de Download de Vídeos">
+        </div>
+
+        <!-- Seção 4: Mais informações com JavaScript interativo -->
+        <div class="section">
+            <h2 id="hidden-title" style="display:none;">Detalhes sobre Download</h2>
+            <p id="hidden-info" style="display:none;">
+                Baixar vídeos de forma segura e eficiente é sempre uma preocupação para os usuários. Certifique-se de usar
+                fontes confiáveis e programas livres de malware. Lembre-se também de não violar as diretrizes do YouTube
+                relacionadas ao download de vídeos sem permissão do criador de conteúdo.
+            </p>
+        </div>
+
+        <!-- Seção 5: Ícones do site -->
+        <div class="icon-container">
+            <img src="https://img.icons8.com/color/50/000000/youtube-play.png" alt="YouTube">
+            <img src="https://img.icons8.com/color/50/000000/download.png" alt="Download">
+            <img src="https://img.icons8.com/color/50/000000/video.png" alt="Vídeo">
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Downloads e Reels do YouTube - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- JavaScript para eventos -->
+    <script>
+        // Evento para exibir mais informações sobre reels
+        document.getElementById('reels-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("Para baixar reels, você pode usar extensões de navegador ou aplicativos confiáveis.");
+        });
+
+        // Exibir mais detalhes sobre downloads ao clicar
+        document.querySelector('.download-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('hidden-title').style.display = 'block';
+            document.getElementById('hidden-info').style.display = 'block';
+        });
+      
+    </script>
+  <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com GIF de Loading</title>
+    <style>
+        /* Estilização para o corpo e conteúdo do site */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        /* Centralizar o conteúdo */
+        .content {
+            display: none; /* O conteúdo ficará oculto até o GIF desaparecer */
+            text-align: center;
+            padding: 50px;
+        }
+        
+        /* Estilização para o GIF de loading */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .loading-overlay img {
+            width: 150px; /* Tamanho do GIF */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GIF de Loading -->
+    <div class="loading-overlay">
+        <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Carregando...">
+    </div>
+
+    <!-- Conteúdo do site -->
+    <div class="content">
+        <h1>Bem-vindo ao Site</h1>
+        <p>Este é o conteúdo principal que será exibido após o GIF desaparecer.</p>
+    </div>
+
+    <!-- JavaScript para controlar o tempo do GIF -->
+    <script>
+        // Define o tempo que o GIF ficará visível (10 minutos = 600000 milissegundos)
+        const gifDuration = 600000; 
+
+        // Função que oculta o GIF após o tempo definido
+        function hideLoadingOverlay() {
+            document.querySelector('.loading-overlay').style.display = 'none';
+            document.querySelector('.content').style.display = 'block'; // Exibe o conteúdo do site
+        }
+
+        // Chama a função após o tempo definido
+        setTimeout(hideLoadingOverlay, gifDuration);
+    </script>
+</body>
+</html>
+</body>
+</html>
